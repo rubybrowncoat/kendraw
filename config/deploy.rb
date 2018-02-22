@@ -74,8 +74,6 @@ namespace :deploy do
   desc 'Restart application'
   task :restart do
     on roles(:app), in: :sequence, wait: 5 do
-      invoke 'lets_encrypt:check_certificate'
-      invoke 'lets_encrypt:authorize'
       invoke 'puma:restart'
     end
   end
