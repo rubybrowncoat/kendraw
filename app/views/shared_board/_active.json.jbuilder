@@ -1,0 +1,1 @@
+json.call(active, :top, :left, :status)

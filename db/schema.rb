@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180221134210) do
+ActiveRecord::Schema.define(version: 20180222075323) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,4 +22,23 @@ ActiveRecord::Schema.define(version: 20180221134210) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "shared_actives", force: :cascade do |t|
+    t.bigint "shared_board_id"
+    t.integer "top"
+    t.integer "left"
+    t.integer "status"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["shared_board_id", "top", "left"], name: "index_shared_actives_on_shared_board_id_and_top_and_left", unique: true
+    t.index ["shared_board_id"], name: "index_shared_actives_on_shared_board_id"
+  end
+
+  create_table "shared_boards", force: :cascade do |t|
+    t.text "content"
+    t.string "url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_foreign_key "shared_actives", "shared_boards"
 end

@@ -1,3 +1,1 @@
-if @board
-  json.(@board, :id, :content, :url, :created_at, :updated_at)
-end
+json.partial! 'saved_board/board', board: @board if @board

@@ -10,11 +10,14 @@ class SavedBoardController < ApplicationController
   end
 
   def create
-    if SavedBoard.exists?(:content => board_params[:content])
-      @board = SavedBoard.find_by_content(board_params[:content])
-    else
-      @board = SavedBoard.create!(board_params)
-    end
+    content = board_params[:content]
+
+    @board =
+      if SavedBoard.exists?(content: content)
+        SavedBoard.find_by_content(content)
+      else
+        SavedBoard.create!(board_params)
+      end
   end
 
   private
@@ -27,5 +30,5 @@ class SavedBoardController < ApplicationController
 
   def set_default_response_format
     request.format = :json
-  end  
+  end
 end

@@ -7,6 +7,9 @@
 # Ignore bundler config.
 /.bundle
 
+# Ignore .env
+/.env
+
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
@@ -14,4 +17,3 @@
 !/tmp/.keep
 
 .byebug_history
-.env

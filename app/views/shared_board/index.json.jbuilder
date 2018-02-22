@@ -1,0 +1,1 @@
+json.array! @boards, partial: 'shared_board/board', as: :board
