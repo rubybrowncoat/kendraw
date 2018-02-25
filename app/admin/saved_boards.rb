@@ -9,7 +9,13 @@ ActiveAdmin.register SavedBoard do
 
     column :theme
     column :size
-    column :url
+    column 'Url' do |board|
+      link_to(
+        board.url,
+        Rails.configuration.frontend_url + 'artefact/' + board.url,
+        target: '_blank'
+      )
+    end
     column :actives, sortable: :actives
 
     column :created_at
