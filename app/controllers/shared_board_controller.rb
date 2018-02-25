@@ -1,4 +1,4 @@
-class SharedBoardController < ApplicationController
+class SharedBoardController < ApiController
   before_action :set_default_response_format
 
   def index

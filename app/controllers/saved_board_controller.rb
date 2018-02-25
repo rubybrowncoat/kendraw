@@ -1,4 +1,4 @@
-class SavedBoardController < ApplicationController
+class SavedBoardController < ApiController
   before_action :set_default_response_format
 
   def index

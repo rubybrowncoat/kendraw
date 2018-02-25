@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
   get 'saved_boards/:url', to: 'saved_board#show', as: 'saved_board'
   get 'saved_boards', to: 'saved_board#index', as: 'saved_boards'
   post 'saved_boards', to: 'saved_board#create'
@@ -8,6 +10,9 @@ Rails.application.routes.draw do
   post 'shared_boards', to: 'shared_board#create'
 
   post 'shared_actives', to: 'shared_active#create'
+
+  # ActiveAdmin
+  ActiveAdmin.routes(self)
 
   # Serve websocket cable requests in-process
   mount ActionCable.server => '/cable'

@@ -42,7 +42,7 @@ module Phrasal
         table chair muscles trek journey quest mission laser-gun gladiator
         pumpkin
       ],
-      numbers: (1..1000000).to_a
+      numbers: (1..1_000_000).to_a
     }
   end
 
