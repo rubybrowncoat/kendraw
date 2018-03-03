@@ -51,3 +51,6 @@ gem 'activeadmin', github: 'activeadmin'
 gem 'devise', '> 4.x'
 gem 'draper'
 gem 'inherited_resources', git: 'https://github.com/activeadmin/inherited_resources'
+
+# PNG
+gem 'oily_png'

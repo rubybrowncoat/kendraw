@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 ActiveAdmin.register SavedBoard do
   permit_params :content, :url
 

@@ -6,8 +6,8 @@ ActiveAdmin.register_page 'Dashboard' do
   content title: proc { I18n.t('active_admin.dashboard') } do
     columns do
       column do
-        panel "Recent Artefacts" do
-          table_for SavedBoard.order("created_at desc").limit(5) do
+        panel 'Recent Artefacts' do
+          table_for SavedBoard.order('created_at desc').limit(5) do
             column :id
             column 'Url' do |board|
               link_to(
@@ -21,8 +21,8 @@ ActiveAdmin.register_page 'Dashboard' do
       end
 
       column do
-        panel "Recent Communes" do
-          table_for SharedBoard.order("created_at desc").limit(5) do
+        panel 'Recent Communes' do
+          table_for SharedBoard.order('created_at desc').limit(5) do
             column :id
             column 'Url' do |board|
               link_to(
