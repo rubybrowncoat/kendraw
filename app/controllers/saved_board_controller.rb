@@ -7,9 +7,9 @@ class SavedBoardController < ApiController
     '#F00',
     '#0F0',
     '#00F',
-    '#0FF',
     '#FF0',
-    '#F0F',
+    '#0FF',
+    '#F0F'
   ]
 
   def index
