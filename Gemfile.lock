@@ -17,12 +17,12 @@ GIT
 
 GIT
   remote: https://github.com/activeadmin/inherited_resources
-  revision: 3e52ca479f8e791e7b0a910e1ac50a79767fb0a9
+  revision: bf4a5bac90ea0bfb00b236ea9cb625fc9c19e250
   specs:
     inherited_resources (1.9.0)
-      actionpack (>= 4.2, < 5.3)
+      actionpack (>= 5.0, < 5.3)
       has_scope (~> 0.6)
-      railties (>= 4.2, < 5.3)
+      railties (>= 5.0, < 5.3)
       responders
 
 GEM
@@ -150,12 +150,12 @@ GEM
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
       ruby_dep (~> 1.2)
-    loofah (2.2.2)
+    loofah (2.2.3)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
       mini_mime (>= 0.1.1)
-    method_source (0.9.0)
+    method_source (0.9.1)
     mini_mime (1.0.1)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
