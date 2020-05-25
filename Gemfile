@@ -7,13 +7,13 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.6', '>= 5.1.6.1'
+gem 'rails', '~> 5.2.4', '>= 5.2.4.3'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
-gem 'puma', '~> 3.7'
+gem 'puma', '~> 3.12', '>= 3.12.6'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.5'
+gem 'jbuilder', '~> 2.7', '>= 2.7.0'
 # Use Redis adapter to run Action Cable in production
 gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
@@ -25,7 +25,7 @@ group :development do
   gem 'capistrano-rvm', require: false
   gem 'capistrano-rails', require: false
   gem 'capistrano-bundler', require: false
-  gem 'capistrano3-puma', require: false
+  gem 'capistrano3-puma', '>= 3.1.1', require: false
 end
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
@@ -39,7 +39,7 @@ end
 group :development do
   gem 'listen', '>= 3.1.5', '< 3.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
+  gem 'spring', '>= 2.0.2'
   gem 'spring-watcher-listen', '~> 2.0.1'
 end
 
@@ -48,7 +48,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Active Admin
 gem 'activeadmin', github: 'activeadmin'
-gem 'devise', '>= 4.4.1'
+gem 'devise', '>= 4.5.0'
 gem 'draper', '>= 3.0.1'
 gem 'inherited_resources', git: 'https://github.com/activeadmin/inherited_resources'
 
