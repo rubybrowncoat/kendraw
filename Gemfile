@@ -7,7 +7,7 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.6', '>= 5.1.6.1'
+gem 'rails', '~> 6.0.3', '>= 6.0.3.5'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
@@ -48,8 +48,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Active Admin
 gem 'activeadmin', github: 'activeadmin'
-gem 'devise', '>= 4.4.1'
-gem 'draper', '>= 3.0.1'
+gem 'devise', '>= 4.7.0'
+gem 'draper', '>= 3.1.0'
 gem 'inherited_resources', git: 'https://github.com/activeadmin/inherited_resources'
 
 # PNG
