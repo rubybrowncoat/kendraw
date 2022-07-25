@@ -13,7 +13,7 @@ gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.5'
+gem 'jbuilder', '~> 2.7', '>= 2.7.0'
 # Use Redis adapter to run Action Cable in production
 gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
@@ -48,7 +48,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Active Admin
 gem 'activeadmin', github: 'activeadmin'
-gem 'devise', '>= 4.4.1'
+gem 'devise', '>= 4.5.0'
 gem 'draper', '>= 3.0.1'
 gem 'inherited_resources', git: 'https://github.com/activeadmin/inherited_resources'
 
